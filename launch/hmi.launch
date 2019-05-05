@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="hmi" name="hmi" type="hmi.py">
+    <param name="source" value="ueye" />
+    <param name="segmentation_topic" value="segmentation_bridge/mask" />
+    <param name="detection_topic" value="detection_bridge/detection" />
+  </node>
+</launch>
